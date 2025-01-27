@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Datos del jugador</h1>
+    <p th:text="'Nombre: ' + ${jugador.nombre}" />
+    <p th:text="'Victorias: ' + ${jugador.victorias}" />
+    <p th:text="'Derrotas: ' + ${jugador.derrotas}" />
+    <p th:text="'Partidas jugadas: ' + ${jugador.victorias + jugador.derrotas}" />
+    <p th:text="'Porcentaje de victorias: ' + ${jugador. + '%'}" />
+    <a href="/">Volver al inicio</a>
+    <a href="/formularioJugador">Volver al formulario</a>
+</body>
+</html>
