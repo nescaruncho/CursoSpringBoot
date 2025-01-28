@@ -12,7 +12,8 @@
     <p th:text="'Victorias: ' + ${jugador.victorias}" />
     <p th:text="'Derrotas: ' + ${jugador.derrotas}" />
     <p th:text="'Partidas jugadas: ' + ${jugador.victorias + jugador.derrotas}" />
-    <p th:text="'Porcentaje de victorias: ' + ${jugador. + '%'}" />
+    <p th:text="'Porcentaje de victorias: ' + ${jugador.porcentajeVictorias + '%'}" />
+    <p th:text="'Eres un ' + ${jugador.tipoJugador}" />
     <a href="/">Volver al inicio</a>
     <a href="/formularioJugador">Volver al formulario</a>
 </body>

@@ -7,25 +7,25 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="/" method="post" >
+    <form action="/formularioJugador" method="post" th:object="${jugador}">
         <p>
             <label>
                 Nombre:
-                <input type="text" name="nombre" th:value="${jugador.nombre}" />
+                <input type="text" th:field="${jugador.nombre}" />
             </label>
         </p>
 
         <p>
             <label>
                 Victorias:
-                <input type="number" name="victorias" th:value="${jugador.victorias}" />
+                <input type="number" th:field="${jugador.victorias}" />
             </label>
         </p>
 
         <p>
             <label>
                 Derrotas:
-                <input type="number" name="derrotas" th:value="${jugador.derrotas}" />
+                <input type="number" th:field="${jugador.derrotas}" />
             </label>
         </p>
         <button type="submit">Enviar</button>
